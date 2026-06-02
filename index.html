@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Handling</title>
+  </head>
+
+  <body>
+    <h1>Forms Handling</h1>
+
+    <form
+      onsubmit="
+        calculatePercentage();
+        return false;
+      "
+    >
+      <input
+        type="number"
+        name="obtainedmarks"
+        id="obtainedmarks"
+        placeholder="Enter Obtained Marks"
+      />
+      <input
+        type="number"
+        name="totalmarks"
+        id="totalmarks"
+        placeholder="Enter Total Marks"
+      />
+      <button>Calculate</button>
+    </form>
+
+    <div id="percentage"></div>
+    <form
+      onsubmit="
+        calculatebmi();
+        return false;
+      "
+    >
+      <input
+        type="number"
+        name="weight"
+        id="weight"
+        placeholder="Enter your weight"
+      />
+      <input
+        type="number"
+        name="height"
+        id="height"
+        placeholder="Enter your height"
+      />
+      <button>Calculate Bmi</button>
+    </form>
+    <div id="bmi"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
